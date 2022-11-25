@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Click Counter</title>
+</head>
+<body>
+    clicks counted:<span id='clicks'>0</span>
+    <script>
+
+            var number = 0;
+
+            document.onclick = function(){
+                    number ++;
+                    document.getElementById("clicks").innerHTML = number;
+            }               
+
+    </script>
+</body>
+</html>
