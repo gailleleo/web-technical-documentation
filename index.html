@@ -1,18 +1,24 @@
 <html>
 <head>
   <title>Click Counter</title>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    clicks counted:<span id='clicks'>0</span>
-    <script>
+    <script src="test.js" ></script>
 
-            var number = 0;
-
-            document.onclick = function(){
-                    number ++;
-                    document.getElementById("clicks").innerHTML = number;
-            }               
-
-    </script>
+    <div class="split left">
+        <div class="centered"> 
+            <button onclick="onClick()">CLICK ME!</button>    
+           
+        </div>
+      </div>  
+      <div class="split right">
+        <div class="centered">          
+            <p>Clicks: <a id="click">0</a></p>
+        </div>
+      </div>
+    
+    
 </body>
 </html>
